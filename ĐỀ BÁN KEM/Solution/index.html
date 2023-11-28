@@ -7,31 +7,24 @@
       href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
       rel="stylesheet"
     />
-    <!--Embed CSS here-->
-
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mooli&display=swap"
-      rel="stylesheet"
-    />
+
     <script src="./script.js"></script>
   </head>
 
   <body>
     <div>
-      <!--container-->
+      <!--Header-->
 
       <div class="header-banner">
-        <!--content header-->
-
+        <!-- header banner-->
         <div>
           <p class="header-banner-text">
             1 cup of ice cream = Thousand words of love
           </p>
         </div>
-
         <div class="header-img-container">
           <img src="images/logoice.png" alt="Ice Cream" class="header-img" />
         </div>
@@ -40,10 +33,20 @@
           <p class="header-banner-text">Where love begins</p>
         </div>
       </div>
-      <!-- kết thúc header-->
 
+      <!--content menu-->
       <div>
-        <!--content menu-->
+        <!--mobile menu-->
+        <div class="mobile-menu-icon" onclick="toggleMobileMenu()">&#9776;</div>
+        <ul class="mobile-navigation">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#news">Ice Cream Menu</a></li>
+          <li><a href="#contact">Milk Tea Menu</a></li>
+          <li><a href="#contact">Events</a></li>
+          <li><a href="#contact">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
         <ul class="header-navigation">
           <li><a href="#home">Home</a></li>
@@ -55,10 +58,10 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      <!--kết thúc menu-->
 
+      <!--Body-->
       <div class="body-herosection">
-        <!--content banner-->
+        <!--herosection-->
         <img
           src="images/Bannerice01.jpg"
           alt="Ice Cream"
@@ -70,32 +73,26 @@
           class="body-herosection-img"
         />
       </div>
-      <!--kết thúc banner-->
+
       <div class="body-details-container">
         <div>
-          <!--image product-->
-
           <img
             src="images/kemsaurieng.jpg"
             alt="Durian ice-cream"
             class="body-details-img"
           />
         </div>
-        <!--kết thúc image product-->
 
+        <!--detail content-->
         <div class="body-details-content">
-          <!--detail content-->
-
           <h2 class="body-details-title">Durian ice-cream</h2>
-
           <p>Durian ice cream is a favorite dessert made from durian</p>
-
           <p>
             Durian ice cream is both an attractive dessert and at the same time
             a food that provides us with a lot of energy (about 456 calories)
           </p>
-
           <p>8 simple ways to make durian ice cream at home very delicious</p>
+
           <ul class="body-details-list">
             <li>How to make durian ice cream with whipping cream</li>
             <li>How to make durian ice cream without eggs</li>
@@ -107,94 +104,68 @@
             <li>How to make banana durian ice cream</li>
           </ul>
         </div>
-        <!--kết thúc detail content-->
       </div>
-      <div style="clear: both"></div>
-      <!-- <div class="body-order">
-        <div class="List_menu">
-          <div>
-            <div class="menu_list">
-              <p>IceCream & Milk Tea</p>
-              <p>------------------Menu List------------------</p>
-            </div>
-            <div class="menu">
-              <input type="checkbox" class="menu_item" /> Coconut Cream
-              <span>2$</span> <br />
-              <input type="checkbox" class="menu_item" /> Strawberry-icecream
-              <span>2$</span>
-              <br />
-              <input type="checkbox" class="menu_item" /> Durrian IceCream
-              <span>2$</span> <br />
-              <input type="checkbox" class="menu_item" /> Butter Cream
-              <span>2$</span>
-            </div>
-          </div>
-          <div class="menu_list1">
-            <p>Your IceCream & Milk Tea</p>
-            <p id="total">------------------Menu List------------------</p>
-            <div id="order_summary"></div>
-          </div>
-        </div>
-        <button onclick="calTotal()" class="btn-order">Order</button>
-      </div> -->
 
+      <!--  order -->
       <div class="body-order">
-        <div class="List_menu">
-          <div>
-            <div class="menu_list">
-              <p>IceCream & Milk Tea</p>
-              <p>------------------Menu List------------------</p>
+        <div class="order-menu">
+          <div class="order-menu-header">
+            <h3>IceCream & Milk Tea</h3>
+            <p>------------------Menu List------------------</p>
+          </div>
+          <div class="order-menu-list">
+            <div class="order-menu-item">
+              <span
+                ><input
+                  type="checkbox"
+                  class="item"
+                  data-price="2"
+                  value="Coconut Cream"
+                />&nbsp;Coconut Cream</span
+              >
+              <span class="menu-item-price">2$</span>
             </div>
-            <div class="menu">
-              <input
-                type="checkbox"
-                class="item"
-                data-price="2"
-                value="Coconut Cream"
-              />
-              Coconut Cream <span>2$</span> <br />
-              <input
-                type="checkbox"
-                class="item"
-                data-price="2"
-                value="Strawberry-icecream"
-              />
-              Strawberry-icecream <span>2$</span> <br />
-              <input
-                type="checkbox"
-                class="item"
-                data-price="2"
-                value="Durian IceCream"
-              />
-              Durian IceCream <span>2$</span> <br />
-              <input
-                type="checkbox"
-                class="item"
-                data-price="2"
-                value="Butter Cream"
-              />
-              Butter Cream <span>2$</span>
+            <div class="order-menu-item">
+              <span
+                ><input
+                  type="checkbox"
+                  class="item"
+                  data-price="2.5"
+                  value="Strawberry-icecream"
+                />&nbsp;Strawberry-icecream</span
+              >
+              <span class="menu-item-price">2.5$</span>
+            </div>
+            <div class="order-menu-item">
+              <span
+                ><input
+                  type="checkbox"
+                  class="item"
+                  data-price="5"
+                  value="Butter Cream"
+                />&nbsp;Butter Cream</span
+              >
+              <span class="menu-item-price">5$</span>
             </div>
           </div>
-          <div class="menu_list1">
-            <p>Your IceCream & Milk Tea</p>
-            <p id="order-list">------------------Menu List------------------</p>
-            <p id="total">Total: $0.00</p>
-          </div>
+          <button class="order-btn" onclick="calTotal()">Order</button>
         </div>
-        <button onclick="calTotal()" class="btn-order">Order</button>
+        <div class="order-cart">
+          <div class="order-menu-header">
+            <h3>Your IceCream & Milk Tea</h3>
+            <p>------------------Menu List------------------</p>
+          </div>
+          <div class="cart-item"></div>
+          <div class="cart-total">Total amount: $0.00</div>
+        </div>
       </div>
-      <div class="footer">
-        <!--content footer-->
 
+      <!--Footer-->
+      <div class="footer">
         <p>Email : Icecream@gmail.com</p>
         <p>Address: 100 To Hien Thanh, District 10, HCMC</p>
         <h5>&copy; Copyright 2021. IceCream.com</h5>
       </div>
-      <!-- kết thúc footer-->
     </div>
-    <!--Kết thúc container-->
-
-    <!--Embed Javascript here-->
   </body>
 </html>

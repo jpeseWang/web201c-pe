@@ -1,0 +1,14 @@
+.logo {
+  width: 70px;
+}
+.content-description {
+  margin-right: 200px;
+}
+
+.footer {
+  background-color: #0ec0c3;
+  color: white;
+  padding: 1%;
+  text-align: center;
+  font-size: larger;
+}

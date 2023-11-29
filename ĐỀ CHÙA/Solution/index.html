@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Travel Maldives</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+
+  <body>
+    <header class="header-container">
+      <div>
+        <!--logo-->
+        <a href="index.html"
+          ><img src="images/Logo.PNG" class="header-logo"
+        /></a>
+      </div>
+
+      <div class="header-menu">
+        <!--desktop content menu-->
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Tours</a></li>
+          <li><a href="#">Promotion Tours</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <!--content search-->
+        <form>
+          <input type="text" placeholder="Search Tour" />
+          <button type="submit" class="search-btn">Search</button>
+        </form>
+      </div>
+    </header>
+    <!--mobile menu-->
+    <div class="mobile-menu-icon" onclick="toggleMobileMenu()">&#9776;</div>
+    <ul class="mobile-navigation">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Tours</a></li>
+      <li><a href="#">Promotion Tours</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <!--Kết thúc header-->
+
+    <div class="content-banner">
+      <!--content banner-->
+
+      <img
+        src="images/Monivongsa-Bopharam.jpg"
+        alt="Chua Monivongsa-Bopharam"
+        class="content-banner_img"
+      />
+      <img
+        src="images/muicamau.jpg"
+        alt="Mui Ca Mau"
+        class="content-banner_img"
+      />
+    </div>
+    <!--Kết thúc Banner-->
+
+    <div class="content-detail">
+      <!--content detail-->
+      <h1 class="content-detail_title">
+        The beautiful tourist destination of Ca Mau is a must to visit
+      </h1>
+      <p class="content-detail_description">
+        Ca Mau is known as the end of the country and is always a must-visit
+        Western tourist destination once in the life of every Vietnamese. The
+        last province of the Vietnamese Fatherland with three sides mainly
+        bordering the sea, coming here visitors will visit the national
+        coordinate landmark, watch the forest, the sea, admire the sunset in the
+        vast sky and sea. Ca Mau exudes a poetic and lyrical, peaceful and
+        rustic beauty that captivates the hearts of visitors. Please introduce
+        the beautiful tourist destinations of Ca Mau not to be missed.
+      </p>
+    </div>
+
+    <!-- Tour Management -->
+    <div class="tour-container">
+      <h3>----Choose your favourite tour---</h3>
+      <div class="tour-option">
+        <span class="tour-price-mark">150$/person</span>
+        <span class="tour-option_item">
+          <p>Tour</p>
+          <select class="tour-item_input">
+            <option>HCM</option>
+            <option>DN</option>
+            <option>HN</option>
+          </select>
+        </span>
+        <span class="tour-option_item">
+          <p>Number of people</p>
+          <input
+            type="number"
+            class="tour-item_input"
+            id="totalPeople"
+            required
+          />
+        </span>
+        <span class="tour-option_item">
+          <p>Departure day</p>
+          <input type="date" class="tour-item_input" required />
+        </span>
+        <span class="tour-option_item">
+          <p>End date</p>
+          <input type="date" class="tour-item_input" required />
+        </span>
+        <span class="tour-option_item">
+          <p>FullName</p>
+          <input type="text" class="tour-item_input" required />
+        </span>
+        <span class="tour-option_item">
+          <p>Phone</p>
+          <input type="number" class="tour-item_input" required />
+        </span>
+      </div>
+      <div class="btn-container">
+        <button class="book-btn" onclick="CalTotal()" type="submit">
+          Book tour
+        </button>
+      </div>
+      <div class="tour-total">Total amount: 0$</div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer-container">
+      <!--content footer-->
+      <div class="footer-list">
+        <div>
+          <h3>Contact</h3>
+          <p>Email : Maldives@gmail.com</p>
+          <p>Address: 100 Dien Bien Phu,District 3, HCMC</p>
+          <p>Phone : 012456789222</p>
+        </div>
+
+        <div>
+          <h3>Services</h3>
+          <p>Breakfast buffet</p>
+          <p>Kayaking</p>
+          <p>Camp-fire</p>
+        </div>
+      </div>
+
+      <h5 class="copyright">&copy; Copyright 2021. Maldives.com</h5>
+    </footer>
+
+    <!--Embed Javascript here-->
+  </body>
+</html>

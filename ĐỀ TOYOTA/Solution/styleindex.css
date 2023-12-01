@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo {
+  width: 20%;
+}
+.header-logo_img {
+  width: 20%;
+}
+
+/* Side navigation */
+.sidenav {
+  display: none;
+  position: fixed;
+
+  background-color: #07a0c7;
+  height: 400px;
+  width: 200px;
+}
+.sidenav a {
+  font-size: 25px;
+  display: block;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #fcf41b;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+.closebtn {
+  margin-left: 70%;
+}
+.sidenav.show {
+  display: block;
+}
+
+/* Banner */
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 200px;
+}
+.banner-img img {
+  height: 320px;
+  width: 400px;
+}
+.content-form {
+  margin: 0 20px;
+  width: 400px;
+}
+.content-form h1 {
+  color: orange;
+  text-align: center;
+}
+.content-form_container {
+  justify-content: space-between;
+}
+.form-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.form-item textarea {
+  height: 150px;
+}
+.form-item label {
+  color: orange;
+}
+.form-item > :nth-child(2) {
+  width: 250px;
+}
+
+.item_textarea {
+  display: flex;
+  align-items: flex-end;
+}
+.form-btn {
+  margin-left: 150px;
+}
+.form-btn input {
+  color: #ffffff;
+  background-color: #ed8c1c;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 2px;
+}
+
+/* Best Seller */
+.bestSellers-container h1 {
+  text-align: center;
+  color: red;
+  margin: 20px;
+}
+.bestSellers-body {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.bestSeller-img {
+  width: 600px;
+  margin: 20px;
+}
+.bestSellers-details h2 {
+  color: #07a0c7;
+}
+.bestSellers-details p {
+  margin: 15px 0;
+  border-bottom: 1px solid rgb(153, 157, 160);
+}
+
+/* Footer */
+footer {
+  color: white;
+  background-color: #07a0c7;
+  text-align: center;
+  line-height: 40px;
+  padding: 12px;
+  bottom: 0;
+}
+/* Responsive */
+@media screen and (max-width: 1250px) {
+  .banner-container {
+    margin: 10px 100px;
+  }
+}
+@media screen and (max-width: 60px) {
+  .banner-container {
+    margin: 10px 10px;
+  }
+}
